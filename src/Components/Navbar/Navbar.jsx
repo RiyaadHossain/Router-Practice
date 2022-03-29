@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../CustomLink/CustomLink';
 
 const Navbar = () => {
     return (
         <nav>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/users'}>Users</Link>
-            <Link to={'/about'}>About</Link>
+            <CustomLink to={'/'}>Home</CustomLink>
+            <CustomLink to={'/users'}>Users</CustomLink>
+            <CustomLink to={'/about'}>About</CustomLink>
         </nav>
     );
 };

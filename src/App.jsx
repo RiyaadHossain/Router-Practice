@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Users from "./Components/Users/Users";
 import { LightBulbIcon } from "@heroicons/react/solid";
+import UserInfo from "./Components/UserInfo/UserInfo";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/users" element={<Users />} />
+        <Route path="users/:userId" element={<UserInfo />}/>
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
